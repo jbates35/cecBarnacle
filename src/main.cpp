@@ -15,9 +15,11 @@
 
 // reference this for PS4: https://github.com/felis/USB_Host_Shield_2.0/blob/master/examples/Bluetooth/PS4BT/PS4BT.ino
 vexServo thisServo(MOTOR_PWM);
+USBHub myUSB;
 
 
 void setup() {
+
   // put your setup code here, to run once:
   pinMode(ENCODER_A, INPUT); // ENCODER_A as Input
   pinMode(ENCODER_B, INPUT); // ENCODER_B as Input
@@ -28,7 +30,6 @@ void setup() {
 }
 
 void loop() {
-
 
   thisServo.run();
     // put your main code here, to run repeatedly:
